@@ -1,0 +1,31 @@
+{
+	"name": "esof-events",
+	"version": "1.0.0",
+	"description": "test",
+	"main": "index.js",
+	"dependencies": {},
+	"devDependencies": {
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10",
+		"webpack-dev-server": "^3.9.0"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"develop": "webpack --watch",
+		"start:dev": "webpack-dev-server",
+		"htmlcss": "cp ./src/index.html ./www/ & cp ./src/style.css ./www/",
+		"build": "webpack --mode production & npm run htmlcss",
+		"ionic:build": "npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/webnicola/esof-events.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/webnicola/esof-events/issues"
+	},
+	"homepage": "https://github.com/webnicola/esof-events#readme"
+}
