@@ -1,15 +1,14 @@
 const DATA = require('./data.js')
-const SpeakerData = DATA.speakers
-const speakerDom = document.querySelector('#speakerDom')
+const speakerData = DATA.speakers
+const speakerList = document.querySelector('#speaker-list')
 
 module.exports = {
-	name: 'Speaker',
-	version: '0.1',
-	render: () => {
-		console.log('*** Render Speaker ***')
-		speakerDom.innerHTML = `
-    ${SpeakerData.map(
-			(item) => `
+  name: 'Speaker',
+  version: "0.1",
+  render: () => {
+    console.log('*** Render Speaker ***')
+    speakerList.innerHTML = `
+    ${speakerData.map(item => `
       <ion-col size="12" size-md="6">
         <ion-card class="speaker-card">
           <ion-card-header>
@@ -32,8 +31,7 @@ module.exports = {
           </ion-card-content>
         </ion-card>
       </ion-col>
-          `
-		).join('\n')}
+          `).join('\n')}
       `
-	}
+  }
 }
