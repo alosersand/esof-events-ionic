@@ -2,7 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="viewport-fit=cover, width=device-width, initial-scale=1.0"
+		/>
 		<title>ESOF 2019</title>
 		<script
 			type="module"
@@ -16,7 +19,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
 		/>
-		<!-- webgis w/ leaflet-->
+		<!-- INIZIO servizio webgis di Leaflet -->
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -28,23 +31,29 @@
 			integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
 			crossorigin=""
 		></script>
-		<!-- end webgis w/ leaflet-->
+		<!-- FINE servizio webgis di Leaflet -->
+
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<ion-app>
 			<ion-tabs id="tabs">
-				<!-- START CALENDAR  -->
-				<ion-tab tab="calendar" class="calendar">
+				<!-- START schedule  -->
+				<ion-tab tab="schedule" class="schedule">
 					<ion-header translucent>
 						<ion-toolbar color="primary">
 							<ion-title>Schedule</ion-title>
 						</ion-toolbar>
 					</ion-header>
-					<ion-content><ion-list id="calendarData"> </ion-list></ion-content>
+					<ion-content>
+						<ion-list id="schedule-list">
+							<!-- javascript injection -->
+						</ion-list>
+					</ion-content>
 				</ion-tab>
-				<!-- END  CALENDAR -->
-				<!-- START SPEAKERS  -->
+				<!-- END  schedule -->
+
+				<!-- START speakers  -->
 				<ion-tab tab="speakers">
 					<ion-header translucent>
 						<ion-toolbar color="secondary">
@@ -53,12 +62,13 @@
 					</ion-header>
 					<ion-content class="speaker-wrapper">
 						<ion-grid fixed>
-							<ion-row class="ion-align-items-stretch" id="speakerDom">
+							<ion-row class="ion-align-items-stretch" id="speaker-list">
+								<!-- javascript injection -->
 							</ion-row>
 						</ion-grid>
 					</ion-content>
 				</ion-tab>
-				<!-- END SPEAKERS  -->
+				<!-- END speakers  -->
 
 				<!-- START MAP  -->
 				<ion-tab tab="map">
@@ -72,53 +82,53 @@
 					</ion-content>
 				</ion-tab>
 				<!-- END MAP  -->
-
+				<!-- START INFO -->
 				<ion-tab tab="info">
 					<ion-header translucent>
-						<ion-toolbar color="warning">
+						<ion-toolbar color="success">
 							<ion-title>Information</ion-title>
 						</ion-toolbar>
 					</ion-header>
-
 					<ion-content>
 						<div class="about-header">
 							<img
-								src="http://placekitten.com/1920/1080"
+								src="https://www.units.it/sites/default/files/styles/slideshow_1170x425/public/media/immagini/notizie/trieste10.jpg"
 								alt="panorama trieste"
 							/>
 						</div>
-
 						<div class="about-info">
 							<h4 class="ion-padding-start">ESOF 2020</h4>
-
 							<ion-list lines="none">
 								<ion-item>
 									<ion-icon name="calendar"></ion-icon>
-									<ion-label>Data</ion-label>
+									<ion-label>Date</ion-label>
 									<ion-datetime
-										display-format="DD MM YYYY"
+										display-format="D MM, YYYY"
 										value="2020-06-11"
 									></ion-datetime>
 								</ion-item>
-
 								<ion-item>
 									<ion-icon name="pin"></ion-icon>
 									<ion-label>Location</ion-label>
 									Trieste, Italy
 								</ion-item>
 							</ion-list>
-
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Assumenda cum error in eveniet hic officiis dolore perspiciatis
-								libero tempore maiores neque, inventore, iste fuga quia placeat
-								laborum voluptatem id ea!
+								ESOF2020 Trieste will take place from 5 to 9 July 2020 and in
+								the two weeks preceding and following the main event. The
+								activities include meetings, conferences, seminars and public
+								events such as shows and exhibitions. Over 4000 researchers,
+								educators, business actors, policy makers and journalists from
+								all over the world are expected in Trieste to discuss
+								breakthroughs in science.
 							</p>
 						</div>
 					</ion-content>
 				</ion-tab>
+				<!-- END INFO -->
+
 				<ion-tab-bar slot="bottom">
-					<ion-tab-button tab="calendar">
+					<ion-tab-button tab="schedule">
 						<ion-label>Schedule</ion-label>
 						<ion-icon name="calendar"></ion-icon>
 					</ion-tab-button>
