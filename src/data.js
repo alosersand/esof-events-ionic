@@ -1,42 +1,116 @@
 module.exports = {
-	calendar: [
+	schedule: [
 		{
-			time: '8:00',
+			time: 'Lunedì 5 Luglio',
 			sessions: [
 				{
 					nome: 'Colazione',
 					inizio: '8:00',
-					fine: '9:00',
-					luogo: 'Caffè degli specchi',
-					id: '162gs38dh'
+					fine: '8:30',
+					luogo: 'Caffè degli Specchi',
+					id: '01',
 				},
 				{
 					nome: 'Presentazione ESOF 2019',
-					inizio: '9:00',
-					fine: '10:00',
+					inizio: '8:30',
+					fine: '10:30',
 					luogo: "Piazza Unità d'Italia",
-					id: '@263gs79'
+					id: '02',
 				},
 				{
-					nome: 'FINE',
-					inizio: '10:00',
+					nome: 'Conclusione',
+					inizio: '10:30',
 					fine: '11:00',
+					luogo: "Porto Vecchio",
+					id: '03',
+				},
+			],
+		},
+		{
+			time: 'Mercoledì 7 Luglio',
+			sessions: [
+				{
+					nome: 'Colazione',
+					inizio: '7:30',
+					fine: '8:30',
+					luogo: 'Caffè degli Specchi',
+					id: '04',
+				},
+				{
+					nome: 'Il Mondo del Caffè',
+					inizio: '8:30',
+					fine: '10:00',
+					luogo: "Eatly",
+					id: '05',
+				},
+				{
+					nome: 'Perchè il Caffè Italiano',
+					inizio: '10:00',
+					fine: '10:30',
+					luogo: "Eatly",
+					id: '06',
+				},
+				{
+					nome: 'Cos\'è la Degustazione 1 - Briefing',
+					inizio: '10:30',
+					fine: '11:30',
+					luogo: "Eatly",
+					id: '07',
+				},
+				{
+					nome: 'Riflessioni Finali',
+					inizio: '11:30',
+					fine: '12:00',
 					luogo: "Piazza Unità d'Italia",
-					id: '@263gs79'
-				}
-			]
-		}
+					id: '08',
+				},
+
+			],
+		},
+		{
+			time: 'Venerdì 9 Luglio',
+			sessions: [
+				{
+					nome: 'Colazione',
+					inizio: '9:00',
+					fine: '9:30',
+					luogo: 'Caffè degli Specchi',
+					id: '09',
+				},
+				{
+					nome: 'Illy nel Mondo',
+					inizio: '9:30',
+					fine: '10:30',
+					luogo: "Piazza della Borsa",
+					id: '10',
+				},
+				{
+					nome: 'Cos\'è la Degustazione 2 - Hands On',
+					inizio: '10:30',
+					fine: '11:00',
+					luogo: "Eatly",
+					id: '11',
+				},
+				{
+					nome: 'Fine ESOF 2020',
+					inizio: '11:00',
+					fine: '12:00',
+					luogo: "Piazza Unità d'Italia",
+					id: '12',
+				},
+			],
+		},
 	],
 	speakers: [
 		{
 			nome: 'Mario Bianchi',
 			img:
-				'https://www.netclipart.com/pp/m/120-1205442_download-bart-simpson-head-png.png',
+				'https://i.pravatar.cc/100',
 			intervento: 'Colazione',
 			inizio: '8:00',
 			fine: '9:00',
 			desc: 'bla bla bla caffè cornetto e amaro',
-			id: '27sghs$'
+			id: '27sghs$',
 		},
 		{
 			nome: 'Dario Cross',
@@ -46,7 +120,7 @@ module.exports = {
 			inizio: '9:00',
 			fine: '10:00',
 			desc: 'bla bla bla caffè cornetto e amaro',
-			id: '37sshs$'
+			id: '37sshs$',
 		},
 		{
 			nome: 'Franco Tell',
@@ -56,8 +130,8 @@ module.exports = {
 			inizio: '10:00',
 			fine: '11:00',
 			desc: 'bla bla bla caffè cornetto e amaro',
-			id: '77s@hs$'
-		}
+			id: '77s@hs$',
+		},
 	],
 	map: {
 		geojson: {
@@ -66,34 +140,34 @@ module.exports = {
 				{
 					type: 'Feature',
 					properties: {
-						evento: 'colazione'
+						evento: 'colazione',
 					},
 					geometry: {
 						type: 'Point',
-						coordinates: [13.762092590332031, 45.649268385921395]
-					}
+						coordinates: [13.762092590332031, 45.649268385921395],
+					},
 				},
 				{
 					type: 'Feature',
 					properties: {
-						evento: 'Inizio'
+						evento: 'Inizio',
 					},
 					geometry: {
 						type: 'Point',
-						coordinates: [13.759925365447998, 45.646283314737836]
-					}
+						coordinates: [13.759925365447998, 45.646283314737836],
+					},
 				},
 				{
 					type: 'Feature',
 					properties: {
-						evento: 'fine'
+						evento: 'fine',
 					},
 					geometry: {
 						type: 'Point',
-						coordinates: [13.764474391937254, 45.64815837802974]
-					}
-				}
-			]
-		}
-	}
+						coordinates: [13.764474391937254, 45.64815837802974],
+					},
+				},
+			],
+		},
+	},
 }
