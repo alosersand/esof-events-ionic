@@ -1,64 +1,78 @@
-/* Set variables for all modes */
+/* variabili valide in tutta l'app */
 :root {
 	--ion-safe-area-top: 20px;
-	/* --ion-safe-area-bottom: 20px; */
+	--ion-safe-area-bottom: 20px;
 
-	/* Set the background of the entire app */
+	/* colore di sfondo dell'intera app */
 	--ion-background-color: #f2f2f2;
 
-	/* Set the font family of the entire app */
+	/* imposto il font da usare in tutta l'app */
 	--ion-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
 		'Roboto', sans-serif;
 }
 
-/* Set text color of the entire app for iOS only */
+/* imposto il colore del font solo per iOS */
 .ios {
 	--ion-text-color: #000;
 }
 
-/* Set text color of the entire app for Material Design only */
+/* imposto il colore del font solo per Android (Material Design) */
 .md {
 	--ion-text-color: #222;
 }
 
-/*
-* START CALENDAR
-*/
+
+/* INIZIO tab */
+ion-tab-bar {
+	--background: #222428;
+	--color: #ffffff;
+}
+/* FINE tab */
+
+
+/* INIZIO schedule */
 ion-item-group > ion-item {
 	--background: #ffffff;
 }
-.calendar ion-item > ion-label {
-	border-left: 2px solid #3bc7c4;
+.schedule ion-item > ion-label {
+	border-left: 2px solid #3880ff;
 	padding-left: 10px;
 }
-/*
-* END CALENDAR
-*/
-/*
-* START SPEAKER
-*/
+ion-tab-button[tab="schedule"] {
+	--color-selected: #3880ff;
+}
+/* FINE schedule */
+
+
+/* INIZIO speakers */
 .speaker-wrapper {
-	--background: #ffffff;
+	--background: #f4f5f8;
 }
 .speaker-card {
-	--background: #f2f2f2;
+	--background: #ffffff;
 }
-/*
-* END SPEAKER
-*/
+ion-tab-button[tab="speakers"] {
+	--color-selected: #0cd1e8;
+}
+ion-tab[tab="speakers"] ion-item {
+	--min-height: 500;
+} 
+/* FINE speakers */
 
-/*
-* MAP
-*/
+
+/* INIZIO map */
 #mapView {
 	width: 100vw;
 	height: 100%;
 }
+ion-tab-button[tab="map"] {
+	--color-selected: #7044ff;
+}
+/* FINE map */
 
-/* 
-INFO
-*/
-.about-info {
+
+/* INIZIO information */
+.about-info ion-item > ion-label {
 	padding-left: 10px;
 }
 .about-info p {
@@ -67,3 +81,7 @@ INFO
 	line-height: 1.5;
 	color: var(--ion-color-dark);
 }
+ion-tab-button[tab="info"] {
+	--color-selected: #10dc60;
+}
+/* FINE information */
