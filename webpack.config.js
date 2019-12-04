@@ -18,7 +18,7 @@ module.exports = {
   // minifying and other thing so let's set mode to development
   mode: 'development',
   devServer: {
-    contentBase: path.join(__dirname, 'www'),
+    contentBase: path.join(__dirname, 'src'),
     compress: false,
     port: 9000
   }
