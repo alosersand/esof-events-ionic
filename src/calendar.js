@@ -1,27 +1,28 @@
 const DATA = require('./data.js')
-const CalendarData = DATA.calendar
-const calendarData = document.querySelector('#calendarData')
+const scheduleData = DATA.schedule
+const scheduleList = document.querySelector('#schedule-list')
 
 module.exports = {
-	name: 'Calendar',
+	name: 'Schedule',
 	version: '0.1',
 	render: () => {
-		console.log('*** Render Calendar ***')
-		calendarData.innerHTML = `
-    ${CalendarData.map(
-			(item) => `
+		console.log('*** Render Schedule ***')
+		scheduleList.innerHTML = `
+    ${scheduleData
+			.map(
+				item => `
           <ion-item-group>
             <ion-item-divider sticky>
               <ion-label>${item.time}</ion-label>
             </ion-item-divider>
             ${item.sessions
 							.map(
-								(session) => `
+								session => `
               <ion-item>
               <ion-label>
                   <h3>${session.nome}</h3>
                   <p>
-                  ${session.inizio} &mdash; ${session.fine}: ${session.luogo}
+                  ${session.inizio} &mdash; ${session.fine} @ ${session.luogo}
                   </p>
               </ion-label>
               </ion-item>
@@ -30,7 +31,8 @@ module.exports = {
 							.join('\n')}
           </ion-item-group>
           `
-		).join('\n')}
+			)
+			.join('\n')}
       `
-	}
+	},
 }
