@@ -68,6 +68,14 @@ ion-tab[tab="speakers"] ion-item {
 ion-tab-button[tab="map"] {
 	--color-selected: #7044ff;
 }
+.popup .leaflet-popup-content-wrapper {
+	font-size: large;
+	color: var(--ion-color-dark);
+	font-weight: bold;
+}
+.popup > a[class="leaflet-popup-close-button"] {
+	color: #f04141;
+}
 /* FINE map */
 
 
