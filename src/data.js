@@ -21,7 +21,7 @@ module.exports = {
 					nome: 'Conclusione',
 					inizio: '10:30',
 					fine: '11:00',
-					luogo: "Porto Vecchio",
+					luogo: 'Porto Vecchio',
 					id: '03',
 				},
 			],
@@ -40,21 +40,21 @@ module.exports = {
 					nome: 'Il Mondo del Caffè',
 					inizio: '8:30',
 					fine: '10:00',
-					luogo: "Eatly",
+					luogo: 'Eataly',
 					id: '05',
 				},
 				{
 					nome: 'Perchè il Caffè Italiano',
 					inizio: '10:00',
 					fine: '10:30',
-					luogo: "Eatly",
+					luogo: 'Eatly',
 					id: '06',
 				},
 				{
-					nome: 'Cos\'è la Degustazione 1 - Briefing',
+					nome: "Cos'è la Degustazione 1 - Briefing",
 					inizio: '10:30',
 					fine: '11:30',
-					luogo: "Eatly",
+					luogo: 'Eatly',
 					id: '07',
 				},
 				{
@@ -64,7 +64,6 @@ module.exports = {
 					luogo: "Piazza Unità d'Italia",
 					id: '08',
 				},
-
 			],
 		},
 		{
@@ -81,14 +80,14 @@ module.exports = {
 					nome: 'Illy nel Mondo',
 					inizio: '9:30',
 					fine: '10:30',
-					luogo: "Piazza della Borsa",
+					luogo: 'Piazza della Borsa',
 					id: '10',
 				},
 				{
-					nome: 'Cos\'è la Degustazione 2 - Hands On',
+					nome: "Cos'è la Degustazione 2 - Hands On",
 					inizio: '10:30',
 					fine: '11:00',
-					luogo: "Eatly",
+					luogo: 'Eatly',
 					id: '11',
 				},
 				{
@@ -104,8 +103,7 @@ module.exports = {
 	speakers: [
 		{
 			nome: 'Mario Bianchi',
-			img:
-				'https://i.pravatar.cc/100',
+			img: 'https://i.pravatar.cc/100',
 			intervento: 'Colazione',
 			inizio: '8:00',
 			fine: '9:00',
@@ -134,37 +132,62 @@ module.exports = {
 		},
 	],
 	map: {
-		geojson: {
+		geoJSON: {
 			type: 'FeatureCollection',
 			features: [
 				{
 					type: 'Feature',
 					properties: {
-						evento: 'colazione',
+						icon: 'https://a.tiles.mapbox.com/v4/marker/pin-m-cafe+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
+						name: 'Caffè degli Specchi',
 					},
 					geometry: {
 						type: 'Point',
-						coordinates: [13.762092590332031, 45.649268385921395],
+						coordinates: [13.768411874771118, 45.65011212720475],
 					},
 				},
 				{
 					type: 'Feature',
 					properties: {
-						evento: 'Inizio',
+						icon: 'https://a.tiles.mapbox.com/v4/marker/pin-m-town-hall+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
+						name: "Piazza Unità d'Italia",
 					},
 					geometry: {
 						type: 'Point',
-						coordinates: [13.759925365447998, 45.646283314737836],
+						coordinates: [13.767730593681335, 45.650044628369805],
 					},
 				},
 				{
 					type: 'Feature',
 					properties: {
-						evento: 'fine',
+						icon: 'https://a.tiles.mapbox.com/v4/marker/pin-m-ferry+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
+						name: 'Porto Vecchio',
 					},
 					geometry: {
 						type: 'Point',
-						coordinates: [13.764474391937254, 45.64815837802974],
+						coordinates: [13.77006411552429, 45.6571203135106],
+					},
+				},
+				{
+					type: 'Feature',
+					properties: {
+						icon: 'https://a.tiles.mapbox.com/v4/marker/pin-m-restaurant+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
+						name: 'Eataly',
+					},
+					geometry: {
+						type: 'Point',
+						coordinates: [13.761371076107025, 45.64702209716792],
+					},
+				},
+				{
+					type: 'Feature',
+					properties: {
+						icon: 'https://a.tiles.mapbox.com/v4/marker/pin-m-town-hall+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
+						name: 'Piazza della Borsa',
+					},
+					geometry: {
+						type: 'Point',
+						coordinates: [13.77023845911026, 45.650378371816004],
 					},
 				},
 			],
