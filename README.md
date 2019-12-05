@@ -1,23 +1,21 @@
-Dev mode:
-- npm install
-- npm run start:dev
+# ESOF Events 2020
 
-Priduction mode:
-- npm run build
-- ionic build
+The **ESOF Events 2020** is a cross-platform mobile application made with [Ionic Framework](https://ionicframework.com) available for *Android* and *iOS*. 
 
+![ESOF 2020 Logo](http://www.proesof2020.eu/ProxyVFS.axd/main_logo,image_logo/r15094/Logo-ESOF-x-sito-png?v=8290&ext=.png%20)
 
-# **ESOF Events 2020**
-### A **cross-platform** app made with [Ionic Framework](https://www.google.com "Ionic's Homepage") for _Android_ and _iOS_
+## How to Start
 
-## **How to Start:**
-
-### Developer Mode:
-```javascript
+### Developer Mode
+To start developing run the following commands:
+```shell
 npm install
 npm run start:dev
 ```
-### Production Mode:
+
+### Production Mode
+To product the app run one of the following commands:
 `npm run build` or `ionic build`
 
-##### Developed by _ITS Kennedy_
+## Credits
+Developed by *ITS Kennedy*
