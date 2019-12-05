@@ -19,13 +19,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/webnicola/esof-events.git"
+		"url": "git+https://github.com/lazyBit99/esof-events.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/webnicola/esof-events/issues"
+		"url": "https://github.com/lazyBit99/esof-events/issues"
 	},
-	"homepage": "https://github.com/webnicola/esof-events#readme"
+	"homepage": "https://github.com/lazyBit99/esof-events#readme"
 }
