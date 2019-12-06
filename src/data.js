@@ -104,31 +104,33 @@ module.exports = {
 		{
 			nome: 'Mario Bianchi',
 			img: 'https://i.pravatar.cc/100',
-			intervento: 'Colazione',
-			inizio: '8:00',
-			fine: '9:00',
-			desc: 'bla bla bla caffè cornetto e amaro',
-			id: '27sghs$',
+			desc: 'Imprenditore',
+			interventi: [
+				'Presentazione ESOF 2019',
+				'Illy nel Mondo',
+				'Fine ESOF 2020'
+			],
+			id: '01',
 		},
 		{
-			nome: 'Dario Cross',
-			img:
-				'https://www.film.it/fileadmin/mediafiles/film/multimedia/201707/images/628x400/MV5BYWUyMTI0NTMtYTMyZC00ZjAwLTk0MWUtYWZjNWU4ZDFmZmFmXkEyXkFqcGdeQXVyNTc3MjUzNTI%40._V1_SY1000_CR0%2C0%2C1499%2C1000_AL_.jpg',
-			intervento: 'Presentazione ESOF 2019',
-			inizio: '9:00',
-			fine: '10:00',
-			desc: 'bla bla bla caffè cornetto e amaro',
-			id: '37sshs$',
+			nome: 'Paolo Rossi',
+			img: 'https://i.pravatar.cc/101',
+			desc: 'Esperto Torrefattore',
+			interventi: [
+				'Il Mondo del Caffè',
+				'Perchè il Caffè Italiano',
+			],
+			id: '02',
 		},
 		{
-			nome: 'Franco Tell',
-			img:
-				'https://i1.wp.com/www.bluegrassyouthballet.org/bybsite/wp-content/uploads/2014/08/Dia-Web-Graphic.jpg',
-			intervento: 'Fine',
-			inizio: '10:00',
-			fine: '11:00',
-			desc: 'bla bla bla caffè cornetto e amaro',
-			id: '77s@hs$',
+			nome: 'Francesca Neri',
+			img: 'https://i.pravatar.cc/102',
+			desc: "Sommelier dell'Espresso",
+			interventi: [
+				"Cos'è la Degustazione 1 - Briefing",
+				"Cos'è la Degustazione 2 - Hands On",
+			],
+			id: '03',
 		},
 	],
 	map: {
@@ -138,7 +140,8 @@ module.exports = {
 				{
 					type: 'Feature',
 					properties: {
-						icon: 'https://a.tiles.mapbox.com/v4/marker/pin-m-cafe+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
+						icon:
+							'https://a.tiles.mapbox.com/v4/marker/pin-m-cafe+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
 						name: 'Caffè degli Specchi',
 					},
 					geometry: {
@@ -149,7 +152,8 @@ module.exports = {
 				{
 					type: 'Feature',
 					properties: {
-						icon: 'https://a.tiles.mapbox.com/v4/marker/pin-m-town-hall+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
+						icon:
+							'https://a.tiles.mapbox.com/v4/marker/pin-m-town-hall+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
 						name: "Piazza Unità d'Italia",
 					},
 					geometry: {
@@ -160,7 +164,8 @@ module.exports = {
 				{
 					type: 'Feature',
 					properties: {
-						icon: 'https://a.tiles.mapbox.com/v4/marker/pin-m-ferry+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
+						icon:
+							'https://a.tiles.mapbox.com/v4/marker/pin-m-ferry+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
 						name: 'Porto Vecchio',
 					},
 					geometry: {
@@ -171,7 +176,8 @@ module.exports = {
 				{
 					type: 'Feature',
 					properties: {
-						icon: 'https://a.tiles.mapbox.com/v4/marker/pin-m-restaurant+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
+						icon:
+							'https://a.tiles.mapbox.com/v4/marker/pin-m-restaurant+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
 						name: 'Eataly',
 					},
 					geometry: {
@@ -182,7 +188,8 @@ module.exports = {
 				{
 					type: 'Feature',
 					properties: {
-						icon: 'https://a.tiles.mapbox.com/v4/marker/pin-m-town-hall+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
+						icon:
+							'https://a.tiles.mapbox.com/v4/marker/pin-m-town-hall+7044ff.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXFhYTA2bTMyeW44ZG0ybXBkMHkifQ.gUGbDOPUN1v1fTs5SeOR4A',
 						name: 'Piazza della Borsa',
 					},
 					geometry: {
