@@ -14,7 +14,7 @@ module.exports = {
 		// aggiungo la basemap
 		L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
 			attribution:
-				'Power by: ITS - Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+				'Power by <a href="https:/carto.com/">CARTO</a>',
 			maxZoom: 18,
 		}).addTo(myMap)
 
