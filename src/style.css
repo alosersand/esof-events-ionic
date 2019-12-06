@@ -18,7 +18,7 @@
 
 /* imposto il colore del font solo per Android (Material Design) */
 .md {
-	--ion-text-color: #222;
+	--ion-text-color: #000;
 }
 
 
@@ -45,11 +45,28 @@ ion-tab-button[tab="schedule"] {
 
 
 /* INIZIO speakers */
-.speaker-wrapper {
-	--background: #f4f5f8;
-}
 .speaker-card {
 	--background: #ffffff;
+}
+.card-header > ion-item {
+	--background: #ffffff;
+}
+.card-header ion-label {
+	background-color: #ffffff;
+}
+.speaker-card .title {
+	font-size: large;
+	font-weight: bold;
+}
+.card-content ion-item {
+	--background: #ffffff;
+}
+.card-content .bull {
+	color: #0cd1e8;
+	font-size: x-large;
+}
+.speaker-card .list-md {
+	background-color: #ffffff;
 }
 ion-tab-button[tab="speakers"] {
 	--color-selected: #0cd1e8;
@@ -80,14 +97,22 @@ ion-tab-button[tab="map"] {
 
 
 /* INIZIO information */
+.about-info {
+padding-top: 10px;
+}
 .about-info ion-item > ion-label {
 	padding-left: 10px;
 }
 .about-info p {
+	margin: 0;
 	text-align: left;
 	padding: 1rem;
 	line-height: 1.5;
 	color: var(--ion-color-dark);
+}
+.ion-padding-start {
+	font-size: x-large;
+	font-weight: bolder;
 }
 ion-tab-button[tab="info"] {
 	--color-selected: #10dc60;
