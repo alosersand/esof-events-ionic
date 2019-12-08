@@ -100,6 +100,9 @@ ion-tab-button[tab="map"] {
 .about-info {
 padding-top: 10px;
 }
+.about-info ion-list {
+	margin-bottom: 0;
+}
 .about-info ion-item > ion-label {
 	padding-left: 10px;
 }
