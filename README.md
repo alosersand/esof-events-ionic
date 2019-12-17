@@ -1,8 +1,14 @@
-# ESOF Events 2020
+# ESOF Events 2020 (**Prototype**)
 
 The **ESOF Events 2020** is a cross-platform mobile application made with [Ionic Framework](https://ionicframework.com) available for *Android* and *iOS*. 
 
 ![ESOF 2020 Logo](http://www.proesof2020.eu/ProxyVFS.axd/main_logo,image_logo/r15094/Logo-ESOF-x-sito-png?v=8290&ext=.png%20)
+
+## Requirements
+* [Node.js](https://nodejs.org)
+* [Ionic CLI](https://ionicframework.com/docs/cli)
+* Xcode
+* [Homebrew](https://brew.sh)
 
 ## How to Start
 
